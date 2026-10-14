@@ -8,4 +8,5 @@ app.config.from_object(Config)
 
 db = SQLAlchemy(app)
 
-from . import views, models
+# Импорт маршрутов, моделей, форм, обработчиков и CLI-команд
+from . import views, models, forms, error_handlers, cli_commands
